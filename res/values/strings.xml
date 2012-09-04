@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RF-LineCalc</string>
+	<string name="WWW">Website</string>
+	<string name="www">https://github.com/NiJen/RF-LineCalc</string>
+	<string name="feedback">Feedback</string>
+	<string name="email">nijen@gmx.eu</string>
+	
+<!-- 	activity choice -->
+    <string-array name="rfLines_array">
+        <item>Coax</item>
+        <item>Microstripline</item>
+        <item>Wirestripline</item>
+        <item>Embedded Wirestripline</item>
+       <!--   <item>Symetricstripline</item> -->
+    </string-array>
+    
+<!-- units -->
+	<string name="mm">mm</string>
+	<string name="MHz">MHz</string>
+	
+<!--     geometry -->
+	<!-- 	All -->
+	<string name="epsilonR">Er</string>
+	<string name="zl">ZL</string>
+	<!-- 	Coax -->
+	<string name="outerD">D</string>
+	<string name="innerd">d</string>
+	<!-- 	Microstripline -->
+	<string name="width">w</string>
+	<string name="thickness">t</string>
+	<string name="height">h</string>
+	<string name="Frequenz">Freq.</string>
+	<!-- 	Wirestripline -->
+	<string name="diameter">d</string>
+	
+<!-- 	text -->
+	<string name="calculate">Calculate ZL</string>
+	<string name="synthesis">Calculate geometry</string>
+	<string name="fix">fix</string>
+	<string name="BildMicrostrip">Microstripline</string>
+	<string name="BildCoax">Coax Cable</string>
+	<string name="off">off</string>
+
+	
+<!-- 	errormessage -->
+	<string name="ERRAuskleinerInn">The outter dimensions (D) must be bigger than the inner dimensions (d)!</string>
+	<string name="ErrZahlen">Use numbers only!</string>
+	<string name="ErrFix">"At least one variable must be fixed."</string>
+	<string name="ERRError">"Sorry, something went wrong"</string>
+	<string name="ErrorFormula">There is a Error in the Formula. I will fix it soon.</string>
+	
+
+</resources>

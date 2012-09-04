@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/BildMicrostrip"
+        android:src="@drawable/microstripline" />
+
+    <LinearLayout
+        android:id="@+id/mainlinear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextmicro_w"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="5dip" android:selectAllOnFocus="true" android:hint="@string/mm"/>
+
+    <EditText
+        android:id="@+id/editTextmicro_t"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextmicro_w"
+        android:layout_below="@+id/editTextmicro_w"
+        android:ems="10"
+        android:inputType="numberDecimal" android:selectAllOnFocus="true" android:hint="@string/off">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextmicro_h"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextmicro_t"
+        android:layout_below="@+id/editTextmicro_t"
+        android:ems="10"
+        android:inputType="numberDecimal" android:selectAllOnFocus="true" android:hint="@string/mm"/>
+
+    <EditText
+        android:id="@+id/editTextmicro_Er"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextmicro_h"
+        android:layout_below="@+id/editTextmicro_h"
+        android:ems="10"
+        android:inputType="numberDecimal" android:selectAllOnFocus="true"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextmicro_w"
+        android:layout_alignBottom="@+id/editTextmicro_w"
+        android:layout_alignParentLeft="true"
+        android:text="@string/width"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextmicro_t"
+        android:layout_alignBottom="@+id/editTextmicro_t"
+        android:layout_alignParentLeft="true"
+        android:text="@string/thickness"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextmicro_h"
+        android:layout_alignBottom="@+id/editTextmicro_h"
+        android:layout_alignParentLeft="true"
+        android:text="@string/height"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextmicro_Er"
+        android:layout_alignBottom="@+id/editTextmicro_Er"
+        android:layout_alignParentLeft="true"
+        android:text="@string/epsilonR"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextmicro_w"
+        android:layout_marginLeft="34dp"
+        android:layout_toRightOf="@+id/editTextmicro_w"
+        android:text="@string/calculate" android:onClick="BerechnungMicroZL"/>
+
+    <EditText
+        android:id="@+id/editTextmicro_ZL"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextmicro_h"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:inputType="numberDecimal" android:selectAllOnFocus="true"/>
+
+    <CheckBox
+        android:id="@+id/checkBox1_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextmicro_t"
+        android:layout_alignBottom="@+id/editTextmicro_t"
+        android:layout_toRightOf="@+id/editTextmicro_w" android:onClick="Checkbox_listener"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextmicro_ZL"
+        android:layout_alignBottom="@+id/editTextmicro_ZL"
+        android:layout_toLeftOf="@+id/editTextmicro_ZL"
+        android:text="@string/zl"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
