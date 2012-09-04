@@ -13,13 +13,9 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.google.ads.AdRequest;
-import com.google.ads.AdSize;
-import com.google.ads.AdView;
-
 
 public class CoaxUI extends Activity {	
-	private AdView adView;
+
 
 	/** Called when the activity is first created. */
     @Override

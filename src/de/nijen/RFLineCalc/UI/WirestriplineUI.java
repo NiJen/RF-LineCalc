@@ -1,9 +1,7 @@
 package de.nijen.RFLineCalc.UI;
 
 
-import com.google.ads.AdRequest;
-import com.google.ads.AdSize;
-import com.google.ads.AdView;
+
 import de.nijen.RFLineCalc.R;
 import de.nijen.RFLineCalc.RFLineCalcActivity;
 import de.nijen.RFLineCalc.Wires.Wirestripline;
@@ -17,7 +15,7 @@ import android.widget.Toast;
 
 
 public class WirestriplineUI extends Activity {
-	private AdView adView;
+
 	
 	/** Called when the activity is first created. */
     @Override
