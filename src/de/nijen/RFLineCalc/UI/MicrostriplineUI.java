@@ -52,7 +52,7 @@ public class MicrostriplineUI extends Activity {
             }else{
             	t=0;
             }
-            ZL=Microstrip.MicroSLZL(h, t, w, Er);
+            ZL=Microstrip.microstripcalc(h, t, w, Er);
 //FehlerhafterTeil in der Microstripline.java
 //            if(CBt){
 //            	t=Double.valueOf(Edit_t.getText().toString());

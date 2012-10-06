@@ -12,6 +12,35 @@ public class Microstripline {
 //	private double Epsilon0=8.854187817e-12;//[As/Vm] Elektrische Feldkonstante
 	private double C0=299792458;			//[m/s] 
 
+	
+	
+//Berechung
+	
+	public double microstripcalc(double h, double t, double w, double ER){
+		double ZL,a,b,c;
+		
+		if(t!=0){
+			w=this.weffneu(h, t, w, ER);
+		}
+		
+		a=Math.pow(((14+8/ER)/(11))*(4*h/w),2)+Math.pow(Math.PI, 2)*((1+1/ER)/2);
+		b=((14+8/ER)/(11))*(4*h/w)+Math.sqrt(a);
+		c=(4*h/w)*b;
+		
+		ZL=this.Z0Luft/(2*Math.PI*Math.sqrt(2*(1+ER)))*Math.log(1+c);
+	
+		return ZL;
+	}
+	
+	private double weffneu(double h, double t, double w, double ER){		
+		double weff=0;
+		
+		weff=w+(t*(1+1/ER)/(2*Math.PI))*Math.log(Math.E*4/Math.sqrt(Math.pow((t/h), 2)+Math.pow(((1/Math.PI)*1/(w/t+11/10)), 2)));
+		
+		return weff;
+	}
+
+// Ende Berechnung nach Inet	
 	//FIXME Hier ist noch ein Fehler drin
 //Berechnung nach IPC2141A	
 	/**

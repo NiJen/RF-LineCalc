@@ -4,6 +4,7 @@ package de.nijen.RFLineCalc;
 
 import de.nijen.RFLineCalc.R;
 import de.nijen.RFLineCalc.UI.CoaxUI;
+import de.nijen.RFLineCalc.UI.MicrostriplineUI;
 import de.nijen.RFLineCalc.UI.SymetricstriplineUI;
 import de.nijen.RFLineCalc.UI.WireembeddedstriplineUI;
 import de.nijen.RFLineCalc.UI.WirestriplineUI;
@@ -50,10 +51,8 @@ public class RFLineCalcActivity extends ListActivity {
             	  startActivity(intent);
         	  }
               else if(position==1){
-            	  Toast.makeText(getApplicationContext(), RFLineCalcActivity.this.getString(R.string.ErrorFormula),
-                        Toast.LENGTH_SHORT).show();
-//            	  final Intent intent = new Intent(RFLineCalcActivity.this, MicrostriplineUI.class);
-//            	  startActivity(intent);
+            	  final Intent intent = new Intent(RFLineCalcActivity.this, MicrostriplineUI.class);
+            	  startActivity(intent);
         	  }
               else if(position==2){
             	  final Intent intent = new Intent(RFLineCalcActivity.this, WirestriplineUI.class);
